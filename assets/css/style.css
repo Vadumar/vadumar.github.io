@@ -1,0 +1,154 @@
+body{
+    
+    background: black;
+    margin: 10px 100px;
+}
+
+h1{
+    font-family: 'Gemunu Libre', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    background: #00ffff;;
+    color:black;
+    padding: 20px 0;
+}
+h2{
+    color:bisque;
+    text-align: center;
+}
+h3{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 35px; 
+    text-align: left;
+    color:ghostwhite;  
+}
+
+.info{
+    width: 1400px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+aside,main{
+    color:white;
+    width: 50%;
+    float: left;
+    font-size: 20px;   
+}
+
+aside img{
+   display:block;
+   width: 70%;
+   height: 70vh;
+}
+
+.nav
+{
+padding: 0;
+text-align: right;
+font-size: 16px;
+font-family: 'Gemunu Libre', sans-serif;
+text-transform: uppercase ;
+}
+
+.link
+{
+    color:chartreuse;
+    text-decoration: none;
+    transition: color .1s linear;
+    margin: 8px;
+}
+
+.link:hover
+{
+    color:cyan;
+}
+
+.players
+{
+    text-align: center;
+    transition: color .1s linear;
+    color:cornflowerblue;
+    text-decoration:none;
+    font-size: 35px;
+}
+.players:hover
+{
+    color:cyan;
+}
+
+#animation
+{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 0px 30%;
+    border-radius: 50%;
+    animation: render 2s ease-in-out infinite;
+}
+
+
+@keyframes render {
+    0%{
+        left:0;
+        background-color: rgb(0, 0, 0); 
+    }
+    25%{
+        left:40px;
+        background-color: rgb(84, 135, 230);
+        
+        
+    }
+    50%{
+        left:80px;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    75%{
+        left: 160px;
+        background-color: rgb(223, 56, 45);    
+    }
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    margin: 20px 1px;
+}
+
+
+.item{
+    width: 200px;
+    height: 150px;    
+}
+
+#accordion{
+margin: 15px 0;
+}
+
+
+footer{
+    font-size: 10px;
+    text-align: center;
+    color:darkgrey;
+    font-family: Calibri, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+
+.gif{
+    margin-left: 150px;
+    width: 1000px;
+}
+
+
+
+.a_about{
+    color: purple   ;
+    text-decoration: none;
+
+    font-size: 50px;
+}
+
+.about{
+    margin-left: 25%;
+}
