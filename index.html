@@ -1,139 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css"> 
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" href="lineAwesome/1.3.0/css/line-awesome.min.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<head>
+		<meta charset="UTF-8" />
+		<title>Кохан КІ-41</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			.container {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
 
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css">
-    <title>BMW</title>
-</head>
-<body>
-    
-<header class="header">
-    <h1>BMW - Bayerische Motoren Werke</h1>
-    <nav class="nav">  
-        <a class="link" href="https://en.wikipedia.org/wiki/BMW">About</a>
-        <a class="link" href="https://en.wikipedia.org/wiki/History_of_BMW">History</a>
-        <a class="link" href="contact.html">Contact</a>
-    </nav>
-</header>
+			.intro_title {
+				font-family: 'Lobster', cursive;
+				font-size: 30px;
+				color: #d25b61;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				text-align: center;
+			}
 
-<div class="info">
-    <aside><img src="assets/images/bmw.png"> </aside>
-    
-    <main>
-        <p id="animation"></p>
-        <h2>Bayerische Motoren Werke</h2>
-        <p>
-            Bayerische Motoren Werke is a German multinational corporate manufacturer of luxury vehicles and motorcycles        </p>
-        
-        <h3>
-            <i class="las la-futbol" style="font-size: 50px; color: aqua;"></i>
-            Main series:</h3>
-        <ul>
-            <li>
-                <a class="players" href="https://en.wikipedia.org/wiki/BMW_S1000RR" target="_blank">BMW s1000rr</a>
-            </li>
-            <li>
-                <a class="players" href="https://en.wikipedia.org/wiki/BMW_3_Series_(F30)" target="_blank">BMW f30</a>
-            </li>
-            <li>
-                <a class="players" href="https://en.wikipedia.org/wiki/BMW_M4" target="_blank">BMW m4</a>
-            </li>
-            <li>
-                <a class="players" href="https://en.wikipedia.org/wiki/BMW_i8" target="_blank">BMW i8</a>
-            </li>
-            <li>
-                <a class="players" href="https://en.wikipedia.org/wiki/BMW_X5" target="_blank">BMW x5</a>
-            </li>
-        </ul>
+			.pictures {
+				text-align: center;
+			}
 
-    </main>
-    
-</div>
+			.food {
+				margin: 35px;
+				border: black;
+				border-radius: 10px;
+				box-shadow: 1px 1px 1px 1px black;
+			}
 
+			.text_block {
+				padding-bottom: 20px;
+				width: 90%;
+				column-count: 3;
+				column-gap: 50px;
+				font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif, serif;
+			}
 
-<div >
-    <img class="gif" src="assets/images/gif.gif" alt="">
-</div>
+			.h_block {
+				margin-left: 40px;
+				margin-right: 40px;
+				column-count: 3;
+				column-gap: 50px;
+				font-family: 'Pattaya', sans-serif;
+			}
 
-<div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41200.67660564293!2d24.002559976850044!3d49.80407264815696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae779c075184f%3A0x201e93b4fbf00976!2sBMW%20Clinic%20Lviv!5e0!3m2!1suk!2sua!4v1639254953031!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			.blocks {
+				display: block;
+				margin: 0 auto 40px;
+				border-radius: 10px;
+				border: 6px solid white;
+				width: 100%;
+			}
 
-    <iframe width="600" height="450" src="https://www.youtube.com/embed/LaK8dalpWVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+			.line {
+				border-top: 2px dashed #dd0e0e;
+				height: 18px;
+				background: no-repeat 10px -18px;
+			}
 
-<div class="owl-carousel owl-theme">
-    <div class="item"><img src="assets/images/m8.jpg"></div>
-    <div class="item"><img src="assets/images/x5.jpg"></div>
-    <div class="item"><img src="assets/images/i8.jpg"></div>
-    <div class="item"><img src="assets/images/ix.jpg"></div>
-    <div class="item"><img src="assets/images/g30.jpg"></div>  
-</div>
-
-<div class accordion id="accordion">
-    <h4>Історія</h4>
-    <p>BMW була заснована Карлом Фрідріхом Раппом у жовтні 1916 року, спочатку як виробник авіаційних двигунів, Bayerische Flugzeug-Werke. Округ Мюнхена — Milbertshofen був обраний тому, що він розташований поблизу від Flugmaschinenfabrik Густава Отто — німецького виробника літаків.
-        У 1916 році компанія підписує контракт на виробництво двигунів V12 для Австро-Угорщини. Потребуючи додаткового фінансування, Рапп отримує підтримку Камілло Кастільйоні і Макса Фріца, компанія відтворюється як Bayerische Motoren Werke GmbH. Надмірне розширення стало причиною ускладнень, Рапп покинув компанію, і керівництво компанією було прийнято австрійським промисловцем Францем Джозефом Поппом у 1917 році, компанія була перейменована у BMW AG в 1918.</p>
-    <h4>Що таке BMW?</h4>
-    <p>Німецький автобудівний та авіамоторний концерн і однойменна торгова марка автомобілів преміум- та люкс-класу і мотоциклів. Концерн є материнською фірмою (холдингом) об'єднання BMW Group, в яке входять такі окремі виробництва: мотоцикли BMW, автомобілі марок BMW, Rolls-Royce, MINI, дочірні виробництва BMW M, BMW i. </p>
-    <h4>Статистика продаж</h4>
-    <p>Всього в 2009 році BMW Group продала 1,286,310 автомобілів під марками BMW, MINI і Rolls-Royce (в 2008: 1,435,876 штук/-10.4 %). З цим показником BMW Group зайняла перше місце серед продаж автомобілів преміум-класу.
-
-        Всього в 2009 автомобілів BMW було продано 1,068,770 штук (в 2008: 1,202,239 штук/-11.1 %). З них декілька моделей збільшили обсяги продажів, а саме:BMW 7 Серії (52,680 штук/+35.7 %), BMW X6 (41,667 штук/+56.8 %) і BMW Z4 (22,761 штук/+26.4 %). Нова модель BMW X1 розійшлась в кількості 8,499 штук, а BMW 5 Серії Гран-турізмо в кількості 3,052 штук.</p>
-</div>
-
-<footer>
-    <p>Vadym Kokhan - 2021</p>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
-integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
-integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" 
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-<script type="text/javascript">
-
-    $('.owl-carousel').owlCarousel({
-
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay: true,
-    autoplayTime: 100,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-</script>
-
-<script>$("#accordion").accordion({
-    "collapsible":true
-});</script>
-
-</body>
+			body {
+				background: linear-gradient(#e5f0a1, #daf045);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="intro_title">Страви української кухні</h1>
+			<iframe
+				class="blocks"
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/l93S5xLaWog"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+			<div class="pictures">
+				<div class="h_block" align="center">
+					<h2>Борщ</h2>
+					<h2>Вареники</h2>
+					<h2>Пампухи</h2>
+				</div>
+				<img
+					class="food"
+					src="https://img.povar.ru/main/ab/23/b4/9c/samii_vkusnii_borsh-404089.jpg"
+					width="300"
+					alt=""
+				/>
+				<img
+					class="food"
+					src="https://www.photorecept.ru/wp-content/uploads/2019/07/9-12-1300x864.jpg"
+					width="300"
+					alt=""
+				/>
+				<img
+					class="food"
+					src="https://ukrainianpeople.us/wp-content/uploads/2019/01/Klasichni-pampuhi-z-makom.jpg"
+					width="300"
+					alt=""
+				/><br />
+				<div align="center">
+					<div class="text_block" align="center">
+						<p>
+							Борщ – класичне блюдо слов'янської кухні. Борщ густий овочевий
+							суп, головний інгредієнт якого – буряк. Як зварити смачний борщ -
+							все залежить тільки від вас. У кожній сім'ї є свій рецепт як
+							приготувати борщ - хтось додає гриби, хтось квасолю. Борщ -
+							заправний овочевий суп, люблять у багатьох країнах. У Київській
+							Русі борщ готували з їстівного листя борщівника (звідси назва).
+							Пізніше стали варити з буряком (звідси колір).
+						</p>
+						<p>
+							Спосіб приготування: спочатку замісити тісто. Для цього потрібно
+							розтерти дріжджі з цукром, додати підігріте молоко і 5 ст. л
+							борошна. Поставити на 25-30 хвилин в тепле місце. Відділяємо
+							жовтки від білків. До опари додаємо цедру апельсина, сіль,
+							ванільний цукор, коньяк, просіяне борошно та замішуємо тісто.
+							Додаємо масло та вимішуємо, поки тісто не стане м’яким.
+						</p>
+						<p>
+							Вареники з картоплею – дуже смачна та ситна страва. Оскільки тісто
+							для них прісне, то їхні смакові якості багато в чому залежать від
+							начинки. Можна також додати до картоплі, наприклад, капусту або
+							гриби. Гарячі вареники з картоплею, присмачені смаженою цибулею чи
+							шкварками або просто зі сметаною, – це неймовірна смакота! Перед
+							подачею їх ще можна перемішати з вершковим маслом.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="text-center text-lg-start">
+			<div class="line"></div>
+			<div class="text-center p-3">Кохан Вадим, КІ-44</div>
+		</footer>
+		<!-- JS-->
+		<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+	</body>
 </html>
